@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Minimal personal landing page" />
+  <title>Afiq — Personal Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">AFIQ.</a>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-button" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">NETCENTRIC COMPUTING STUDENT</p>
+        <h1>I build simple, useful things for the web and networks.</h1>
+        <p class="hero-text">
+          I'm Afiq, an IT student interested in networking, Linux,
+          Docker, web development, and infrastructure.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View Projects</a>
+          <a class="button button-secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <span class="status-dot"></span>
+        <span>Currently exploring Docker & deployment</span>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-label">01 / ABOUT</div>
+
+      <div class="about-grid">
+        <h2>Learning by building.</h2>
+        <div>
+          <p>
+            I enjoy experimenting with technologies that connect software,
+            systems, and networks together.
+          </p>
+          <p>
+            Right now, I'm learning more about containers, Linux servers,
+            networking, and deploying applications to the cloud.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-label">02 / PROJECTS</div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <h3>Docker Web Server</h3>
+          <p>
+            A lightweight website containerized with Docker and served using Nginx.
+          </p>
+          <div class="tags">
+            <span>Docker</span>
+            <span>Nginx</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <h3>Network Simulation</h3>
+          <p>
+            Experiments with routing protocols and network performance using ns-3.
+          </p>
+          <div class="tags">
+            <span>ns-3</span>
+            <span>Networking</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <h3>Home Server Lab</h3>
+          <p>
+            A personal environment for learning self-hosting, storage, containers,
+            and infrastructure.
+          </p>
+          <div class="tags">
+            <span>Linux</span>
+            <span>Homelab</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-label">03 / CONTACT</div>
+
+      <div class="contact-box">
+        <div>
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Have something interesting in mind?</h2>
+        </div>
+
+        <a class="button button-primary" href="mailto:your@email.com">
+          Send an Email
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Afiq</p>
+    <p>Built with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
